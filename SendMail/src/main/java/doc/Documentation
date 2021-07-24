@@ -1,0 +1,14 @@
+SendMail Project
+
+This project is for sending a mail to multiple people.
+
+The sendmail contains the classes SendMail, Mail and Gmail
+
+Mail class is an abstract class
+Gmail is a subclass of Mail
+
+SendMail class contains "main" method and returnable method called "mailhost" which will return object of type mail.
+The user can add different mail hosts and send his/her mail using with that host.
+The "main" method calls the mailhost method and get the object of type Mail and calls the "send" method of Mail class.
+In "send" method the receiver address will be stored in properties object addresses using the method "to" in which the reciever's address is read from a text file.
+Then calls the "message" method in which the Subject of the mail and main content of the mail will be stored and send to the receiver.
