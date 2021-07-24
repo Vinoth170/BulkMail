@@ -14,7 +14,6 @@ import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 
 /**
@@ -77,10 +76,8 @@ abstract class Mail{
 			//Sets subject of the mail using setSubject method
 			message.setSubject("Better way to Communicate");
 			
-			MimeBodyPart bodypart=new MimeBodyPart();
-			
 			//Content of the mail composed with setText method
-			bodypart.setText("Dear "+toperson+"\n\nWelcome you to the world fo technology."
+			message.setText("Dear "+toperson+"\n\nWelcome you to the world fo technology."
 					+ " Do you have problem with send same mail "
 					+ "to lots of people we have solution.\n\nYou can get a sample mail"
 					+ "project form my GitHub.This is my "
